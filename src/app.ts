@@ -1,5 +1,6 @@
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
+import globalErrorHandler from './app/middlewares/globalErrorHandler';
 
 const app: Application = express();
 
@@ -16,5 +17,8 @@ const test = async (req: Request, res: Response) => {
 };
 
 app.get('/', test);
+
+// Error handlers
+app.use(globalErrorHandler);
 
 export default app;
