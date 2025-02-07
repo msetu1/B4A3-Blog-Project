@@ -272,3 +272,14 @@ Description: Allows an admin to delete any blog by its ID.
    ```
    npm i --save-dev @types/jsonwebtoken
    ```
+
+   Create a .env file with the following:
+
+- PORT: The server port (e.g., 8008).
+- MONGO_URI: MongoDB connection string.
+- JWT_SECRET: Secret key for JWT.
+- BCRYPT_SALT_ROUNDS : your round value
+- JWT_ACCESS_SECRET
+- JWT_REFRESH_SECRET
+- JWT_ACCESS_EXPIRES_IN
+- JWT_REFRESH_EXPIRES_IN
